@@ -1,0 +1,266 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Schmoney Digital - Myrtle Beach Digital Marketing Experts</title>
+    <meta name="description" content="Schmoney Digital: Elevating Myrtle Beach businesses with badass web design, SEO, and creative marketing solutions.">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"> <!-- Font Awesome for icons -->
+    <!-- Add Favicon Links Here -->
+
+    <!-- Add Import Map for Three.js -->
+    <script type="importmap">
+    {
+        "imports": {
+            "three": "https://cdn.jsdelivr.net/npm/three@0.158.0/build/three.module.js",
+            "three/examples/jsm/": "https://cdn.jsdelivr.net/npm/three@0.158.0/examples/jsm/"
+        }
+    }
+    </script>
+
+</head>
+<body>
+    <!-- REMOVE Parallax Background Layers -->
+    <!--
+    <div class="parallax-bg">
+        <div class="parallax-layer parallax-layer-1" aria-hidden="true"></div>
+        <div class="parallax-layer parallax-layer-2" aria-hidden="true"></div>
+        <div class="parallax-layer parallax-layer-3" aria-hidden="true"></div>
+    </div>
+    -->
+
+    <header class="site-header">
+        <div class="container">
+            <div class="logo">
+                <a href="index.html">Schmoney<span>.</span></a> <!-- Added span for potential styling -->
+            </div>
+            <nav class="main-nav">
+                <button class="hamburger" aria-label="Toggle navigation" aria-expanded="false">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </button>
+                <ul class="nav-links">
+                    <li><a href="index.html" class="active">Home</a></li>
+                    <li><a href="services.html">Services</a></li>
+                    <li><a href="portfolio.html">Portfolio</a></li>
+                    <li><a href="about.html">About</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <main>
+        <!-- Hero Section -->
+        <section class="hero">
+            <!-- REMOVE Canvas for Three.js Shader -->
+            <!-- <canvas id="hero-shader-canvas"></canvas> -->
+
+            <!-- ADD Animated Waves Background -->
+            <div class="animated-waves-background" aria-hidden="true">
+                <!-- Replace divs with inline SVGs -->
+                <svg id="wave1" viewBox="0 0 1440 320" xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="none" style="display: block; width: 100%; height: 100%;">
+                    <defs>
+                        <linearGradient id="waveGradient1" x1="0%" y1="0%" x2="0%" y2="100%">
+                            <stop offset="0%" style="stop-color: rgba(var(--color-secondary-rgb), 0.3);" />
+                            <stop offset="100%" style="stop-color: rgba(var(--color-primary-rgb), 0.5);" />
+                        </linearGradient>
+                        <filter id="waveTurbulence" x="-10%" y="-10%" width="120%" height="120%" filterUnits="objectBoundingBox" primitiveUnits="userSpaceOnUse" color-interpolation-filters="linearRGB">
+                            <feTurbulence type="fractalNoise" baseFrequency="0.008 0.02" numOctaves="3" seed="10" stitchTiles="stitch" result="turbulence"/>
+                            <feDisplacementMap in="SourceGraphic" in2="turbulence" scale="1.5" xChannelSelector="R" yChannelSelector="G" result="displacementMap"/>
+                         </filter>
+                    </defs>
+                    <path fill="url(#waveGradient1)" d="M0,180 C240,165 480,195 720,180 C960,165 1200,195 1440,180 L1440,320 L0,320 Z"></path>
+                </svg>
+                <svg id="wave2" viewBox="0 0 1440 320" xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="none" style="display: block; width: 100%; height: 100%;">
+                     <defs>
+                        <linearGradient id="waveGradient2" x1="0%" y1="0%" x2="0%" y2="100%">
+                            <stop offset="0%" style="stop-color: rgba(var(--color-secondary-rgb), 0.5);" />
+                            <stop offset="100%" style="stop-color: rgba(var(--color-primary-rgb), 0.7);" />
+                        </linearGradient>
+                    </defs>
+                    <path fill="url(#waveGradient2)" d="M0,200 C360,175 720,225 1080,200 C1260,186 1350,195 1440,190 L1440,320 L0,320 Z"></path>
+                </svg>
+                 <svg id="wave3" viewBox="0 0 1440 320" xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="none" style="display: block; width: 100%; height: 100%;">
+                     <defs>
+                        <linearGradient id="waveGradient3" x1="0%" y1="0%" x2="0%" y2="100%">
+                            <stop offset="0%" style="stop-color: rgba(var(--color-secondary-rgb), 0.7);" />
+                            <stop offset="100%" style="stop-color: rgba(var(--color-primary-rgb), 0.9);" />
+                        </linearGradient>
+                    </defs>
+                    <path fill="url(#waveGradient3)" d="M0,220 C120,210 240,230 360,220 C480,210 600,230 720,220 C840,210 960,230 1080,220 C1200,210 1320,230 1440,220 L1440,320 L0,320 Z"></path>
+                </svg>
+                <!-- Removed old divs -->
+                <!-- <div class="wave wave1"></div> -->
+                <!-- <div class="wave wave2"></div> -->
+                <!-- <div class="wave wave3"></div> -->
+            </div>
+
+            <!-- REMOVE Old SVG Background -->
+            <!--
+            <div class="hero-background-wave">
+                ...
+            </div>
+            -->
+
+            <!-- 3D Wave Canvas -->
+            <canvas id="hero-3d-model-canvas"></canvas>
+
+            <!-- Text container sitting beneath the crashing wave -->
+            <div class="hero-text-container">
+                <div class="container hero-content-container">
+                    <div class="hero-content animate-on-scroll">
+                        <h1 class="hero-title">Myrtle Beach Waves<br>& Digital Dominance<span class="text-primary">.</span></h1>
+                        <p class="hero-subtitle">Schmoney Digital crafts badass digital experiences that drive results for local businesses.</p>
+                        <a href="contact.html" class="btn btn-primary btn-lg">Get Your Free Quote</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Services Overview -->
+        <section class="services-overview section-padding bg-light">
+            <div class="container">
+                <h2 class="section-title text-center animate-on-scroll">What We Crush<span class="text-primary">.</span></h2>
+                <p class="section-subtitle text-center animate-on-scroll">Digital solutions designed for impact, inspired by the coast.</p>
+                <div class="services-grid">
+                    <div class="service-card animate-on-scroll">
+                        <i class="fas fa-drafting-compass card-icon"></i>
+                        <h3>Creative Web Design</h3>
+                        <p>Stunning, responsive websites built to convert visitors and reflect your unique brand.</p>
+                        <a href="services.html#web-design" class="learn-more">Learn More &rarr;</a>
+                    </div>
+                    <div class="service-card animate-on-scroll" style="--animation-delay: 100ms;">
+                        <i class="fas fa-bullseye card-icon"></i>
+                        <h3>Local SEO Domination</h3>
+                        <p>Get found by Myrtle Beach customers actively searching for your services online.</p>
+                        <a href="services.html#seo" class="learn-more">Learn More &rarr;</a>
+                    </div>
+                    <div class="service-card animate-on-scroll" style="--animation-delay: 200ms;">
+                        <i class="fas fa-pen-nib card-icon"></i>
+                        <h3>Compelling Content</h3>
+                        <p>Engaging copy, blogs, and social media strategies that tell your story and build authority.</p>
+                        <a href="services.html#content" class="learn-more">Learn More &rarr;</a>
+                    </div>
+                     <div class="service-card animate-on-scroll" style="--animation-delay: 300ms;">
+                        <i class="fas fa-video card-icon"></i>
+                        <h3>Visual Storytelling</h3>
+                        <p>High-impact photography and videography that captures attention and showcases your best.</p>
+                        <a href="services.html#media" class="learn-more">Learn More &rarr;</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Why Choose Us / Benefits -->
+        <section class="benefits-section section-padding">
+            <div class="container">
+                <div class="benefits-content">
+                    <div class="benefits-text animate-on-scroll">
+                        <h2 class="section-title">Why Schmoney Stands Out<span class="text-primary">.</span></h2>
+                        <p>We're not just another agency. We're your dedicated Myrtle Beach growth partners, blending local insight with cutting-edge digital strategy.</p>
+                        <ul>
+                            <li><i class="fas fa-check-circle text-primary"></i> Deep Local Market Understanding</li>
+                            <li><i class="fas fa-check-circle text-primary"></i> Data-Driven Results & Transparency</li>
+                            <li><i class="fas fa-check-circle text-primary"></i> Creative Solutions That Convert</li>
+                            <li><i class="fas fa-check-circle text-primary"></i> Passionate About Your Success</li>
+                        </ul>
+                        <a href="about.html" class="btn btn-secondary">Meet the Team</a>
+                    </div>
+                    <div class="benefits-image animate-on-scroll" style="--animation-delay: 200ms;">
+                        <!-- Replace placeholder with thematic image -->
+                        <img src="https://images.unsplash.com/photo-1519389950473-47ba0277781c?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1170&q=80" alt="Marketing team collaborating near the coast" style="width: 100%; height: auto; border-radius: 8px;">
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Testimonials -->
+        <section class="testimonials-section section-padding bg-dark text-light">
+            <div class="container">
+                <h2 class="section-title text-center animate-on-scroll">Raving Fans<span class="text-secondary">.</span></h2>
+                 <p class="section-subtitle text-center animate-on-scroll">Don't just take our word for it.</p>
+                <div class="testimonial-slider animate-on-scroll">
+                    <!-- Placeholder for slider JS or static testimonials -->
+                    <div class="testimonial-item">
+                        <blockquote>
+                            "Schmoney Digital completely transformed our online presence. Their creative approach and local SEO expertise doubled our leads!"
+                        </blockquote>
+                        <cite>– Sarah K., Owner, Myrtle Beach Cafe</cite>
+                    </div>
+                    <div class="testimonial-item">
+                        <blockquote>
+                            "The most professional and results-oriented marketing team we've worked with. Highly recommend!"
+                        </blockquote>
+                        <cite>– Mike R., Manager, Local Retail Store</cite>
+                    </div>
+                    <!-- Add more items -->
+                </div>
+            </div>
+        </section>
+
+        <!-- CTA -->
+        <section class="cta-section section-padding">
+             <div class="container text-center">
+                 <h2 class="section-title animate-on-scroll">Ready to Make Waves<span class="text-primary">?</span></h2>
+                 <p class="section-subtitle animate-on-scroll">Let's discuss how Schmoney Digital can elevate your Myrtle Beach business.</p>
+                 <a href="contact.html" class="btn btn-primary btn-lg animate-on-scroll" style="--animation-delay: 100ms;">Start Your Project</a>
+             </div>
+        </section>
+
+    </main>
+
+    <footer class="site-footer bg-dark text-light">
+         <div class="container">
+             <div class="footer-grid">
+                 <div class="footer-col">
+                     <h4 class="footer-title">Schmoney<span>.</span></h4>
+                     <p>Creative Digital Marketing for Myrtle Beach & Beyond.</p>
+                     <div class="social-links">
+                         <a href="#" aria-label="Facebook"><i class="fab fa-facebook-f"></i></a>
+                         <a href="#" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+                         <a href="#" aria-label="LinkedIn"><i class="fab fa-linkedin-in"></i></a>
+                         <a href="#" aria-label="Twitter"><i class="fab fa-twitter"></i></a>
+                     </div>
+                 </div>
+                 <div class="footer-col">
+                     <h4 class="footer-title">Quick Links</h4>
+                     <ul class="footer-nav">
+                         <li><a href="index.html">Home</a></li>
+                         <li><a href="services.html">Services</a></li>
+                         <li><a href="portfolio.html">Portfolio</a></li>
+                         <li><a href="about.html">About Us</a></li>
+                         <li><a href="contact.html">Contact</a></li>
+                         <li><a href="#">Privacy Policy</a></li>
+                     </ul>
+                 </div>
+                  <div class="footer-col">
+                     <h4 class="footer-title">Services</h4>
+                     <ul class="footer-nav">
+                         <li><a href="services.html#web-design">Web Design</a></li>
+                         <li><a href="services.html#seo">Local SEO</a></li>
+                         <li><a href="services.html#content">Content Creation</a></li>
+                         <li><a href="services.html#media">Photo & Video</a></li>
+                     </ul>
+                 </div>
+                 <div class="footer-col">
+                     <h4 class="footer-title">Get In Touch</h4>
+                     <address>
+                         Myrtle Beach, SC<br>
+                         <a href="tel:5551234567">(555) 123-4567</a><br>
+                         <a href="mailto:hello@schmoney.com">hello@schmoney.com</a>
+                     </address>
+                 </div>
+             </div>
+             <div class="footer-bottom">
+                 <p>&copy; <span id="current-year"></span> Schmoney Digital. Ride the wave to success.</p>
+             </div>
+         </div>
+    </footer>
+
+    <!-- Ensure script.js is loaded as a module -->
+    <script type="module" src="script.js"></script>
+</body>
+</html> 

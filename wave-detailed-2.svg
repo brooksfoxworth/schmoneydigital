@@ -1,0 +1,10 @@
+<!-- Layer 2: Mid Teal, Medium Movement -->
+<svg viewBox="0 0 1920 400" xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="none">
+<defs>
+    <linearGradient id="gradient2" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" style="stop-color:rgba(var(--color-secondary-rgb, 79, 195, 247), 0.4); stop-opacity:1" />
+      <stop offset="100%" style="stop-color:rgba(var(--color-secondary-rgb, 79, 195, 247), 0.7); stop-opacity:1" />
+    </linearGradient>
+</defs>
+<path fill="url(#gradient2)" d="M0,300 C400,380 550,220 850,310 C1150,400 1300,250 1600,320 C1750,390 1870,280 1920,310 L1920 400 L0 400 Z"></path>
+</svg> 

@@ -1,0 +1,10 @@
+<!-- Layer 3: Lightest Aqua, Fastest Movement -->
+<svg viewBox="0 0 1920 400" xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="none">
+<defs>
+    <linearGradient id="gradient3" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" style="stop-color:rgba(var(--color-secondary-rgb, 79, 195, 247), 0.6); stop-opacity:1" />
+      <stop offset="100%" style="stop-color:rgba(var(--color-secondary-rgb, 79, 195, 247), 0.9); stop-opacity:1" />
+    </linearGradient>
+</defs>
+<path fill="url(#gradient3)" d="M0,340 C500,400 650,280 950,350 C1250,420 1400,300 1700,360 C1800,390 1880,320 1920,340 L1920 400 L0 400 Z"></path>
+</svg> 

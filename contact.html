@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Us - Schmoney Digital Marketing</title>
+    <meta name="description" content="Get in touch with Schmoney Digital to discuss your Myrtle Beach web design, SEO, or digital marketing project.">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <!-- Add Favicon Links Here -->
+</head>
+<body>
+
+    <header class="site-header">
+        <div class="container">
+            <div class="logo">
+                <a href="index.html">Schmoney<span>.</span></a>
+            </div>
+            <nav class="main-nav">
+                <button class="hamburger" aria-label="Toggle navigation" aria-expanded="false">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </button>
+                <ul class="nav-links">
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="services.html">Services</a></li>
+                    <li><a href="portfolio.html">Portfolio</a></li>
+                    <li><a href="about.html">About</a></li>
+                    <li><a href="contact.html" class="active">Contact</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <main>
+        <section class="page-header section-padding bg-gradient">
+            <div class="container text-center">
+                <h1 class="page-title animate-on-scroll">Let's Talk Strategy<span class="text-secondary">.</span></h1>
+                <p class="page-subtitle animate-on-scroll" style="--animation-delay: 100ms;">Reach out and let's start making waves for your business.</p>
+            </div>
+        </section>
+
+        <!-- Wavy Divider -->
+        <div class="wavy-divider top-divider">
+             <svg viewBox="0 0 1440 100" xmlns="http://www.w3.org/2000/svg">
+                <path d="M0,50 C150,0 300,100 450,50 C600,0 750,100 900,50 C1050,0 1200,100 1350,50 C1500,0 1440,50 1440,50 L1440,0 L0,0 Z" fill="rgba(var(--color-primary-rgb),0.8)"></path>
+            </svg>
+        </div>
+
+        <section class="contact-section section-padding">
+            <div class="container">
+                <div class="contact-grid">
+                    <div class="contact-form-wrapper animate-on-scroll">
+                        <h2 class="section-title">Send Us a Message</h2>
+                        <form id="contact-form" action="#" method="POST"> <!-- Add backend endpoint later -->
+                            <div class="form-group">
+                                <label for="name">Your Name</label>
+                                <input type="text" id="name" name="name" required>
+                            </div>
+                            <div class="form-group">
+                                <label for="email">Your Email</label>
+                                <input type="email" id="email" name="email" required>
+                            </div>
+                            <div class="form-group">
+                                <label for="service">Interested Service (Optional)</label>
+                                <select id="service" name="service">
+                                    <option value="">-- Select a Service --</option>
+                                    <option value="web-design">Web Design & Development</option>
+                                    <option value="seo">Local SEO</option>
+                                    <option value="content">Content Creation</option>
+                                    <option value="media">Photography & Video</option>
+                                    <option value="other">Other/General Inquiry</option>
+                                </select>
+                            </div>
+                            <div class="form-group">
+                                <label for="message">Your Message</label>
+                                <textarea id="message" name="message" rows="6" required></textarea>
+                            </div>
+                            <button type="submit" class="btn btn-primary">Send Message</button>
+                            <div class="form-status"></div> <!-- For success/error messages -->
+                        </form>
+                    </div>
+                    <div class="contact-info-wrapper animate-on-scroll" style="--animation-delay: 150ms;">
+                        <h2 class="section-title">Contact Info</h2>
+                         <p>Prefer to chat directly? Find us here:</p>
+                        <ul class="contact-details">
+                            <li>
+                                <i class="fas fa-map-marker-alt"></i>
+                                <span>Myrtle Beach, SC (By Appointment)</span>
+                            </li>
+                            <li>
+                                <i class="fas fa-phone"></i>
+                                <a href="tel:5551234567">(555) 123-4567</a>
+                            </li>
+                            <li>
+                                <i class="fas fa-envelope"></i>
+                                <a href="mailto:hello@schmoney.com">hello@schmoney.com</a>
+                            </li>
+                            <li>
+                                <i class="fas fa-clock"></i>
+                                <span>Mon - Fri: 9:00 AM - 5:00 PM</span>
+                            </li>
+                        </ul>
+                        <div class="contact-social">
+                             <h3 class="contact-subtitle">Connect Online:</h3>
+                            <div class="social-links">
+                                <a href="#" aria-label="Facebook"><i class="fab fa-facebook-f"></i></a>
+                                <a href="#" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+                                <a href="#" aria-label="LinkedIn"><i class="fab fa-linkedin-in"></i></a>
+                                <a href="#" aria-label="Twitter"><i class="fab fa-twitter"></i></a>
+                            </div>
+                        </div>
+                         <!-- Optional: Map Embed -->
+                         <!-- <div class="map-embed">
+                             <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d..." width="100%" height="300" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+                         </div> -->
+                    </div>
+                </div>
+            </div>
+        </section>
+
+    </main>
+
+    <footer class="site-footer bg-dark text-light">
+        <!-- Footer content identical to index.html -->
+         <div class="container">
+             <div class="footer-grid">
+                 <div class="footer-col">
+                     <h4 class="footer-title">Schmoney<span>.</span></h4>
+                     <p>Creative Digital Marketing for Myrtle Beach & Beyond.</p>
+                     <div class="social-links">
+                         <a href="#" aria-label="Facebook"><i class="fab fa-facebook-f"></i></a>
+                         <a href="#" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+                         <a href="#" aria-label="LinkedIn"><i class="fab fa-linkedin-in"></i></a>
+                         <a href="#" aria-label="Twitter"><i class="fab fa-twitter"></i></a>
+                     </div>
+                 </div>
+                 <div class="footer-col">
+                     <h4 class="footer-title">Quick Links</h4>
+                     <ul class="footer-nav">
+                         <li><a href="index.html">Home</a></li>
+                         <li><a href="services.html">Services</a></li>
+                         <li><a href="portfolio.html">Portfolio</a></li>
+                         <li><a href="about.html">About Us</a></li>
+                         <li><a href="contact.html">Contact</a></li>
+                         <li><a href="#">Privacy Policy</a></li>
+                     </ul>
+                 </div>
+                  <div class="footer-col">
+                     <h4 class="footer-title">Services</h4>
+                     <ul class="footer-nav">
+                         <li><a href="services.html#web-design">Web Design</a></li>
+                         <li><a href="services.html#seo">Local SEO</a></li>
+                         <li><a href="services.html#content">Content Creation</a></li>
+                         <li><a href="services.html#media">Photo & Video</a></li>
+                     </ul>
+                 </div>
+                 <div class="footer-col">
+                     <h4 class="footer-title">Get In Touch</h4>
+                     <address>
+                         Myrtle Beach, SC<br>
+                         <a href="tel:5551234567">(555) 123-4567</a><br>
+                         <a href="mailto:hello@schmoney.com">hello@schmoney.com</a>
+                     </address>
+                 </div>
+             </div>
+             <div class="footer-bottom">
+                 <p>&copy; <span id="current-year"></span> Schmoney Digital. Ride the wave to success.</p>
+             </div>
+         </div>
+    </footer>
+
+    <script src="script.js" defer></script>
+</body>
+</html> 

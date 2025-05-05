@@ -1,0 +1,10 @@
+<!-- Layer 1: Deepest Blue, Slowest Movement -->
+<svg viewBox="0 0 1920 400" xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="none">
+<defs>
+    <linearGradient id="gradient1" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" style="stop-color:rgba(var(--color-primary-rgb, 10, 126, 163), 0.3); stop-opacity:1" />
+      <stop offset="100%" style="stop-color:rgba(var(--color-primary-rgb, 10, 126, 163), 0.6); stop-opacity:1" />
+    </linearGradient>
+</defs>
+<path fill="url(#gradient1)" d="M0,250 C300,350 400,180 700,280 C1000,380 1100,200 1400,290 C1700,380 1820,240 1920,280 L1920 400 L0 400 Z"></path>
+</svg> 
